@@ -1,0 +1,392 @@
+@charset "utf-8";
+@import url(//fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+@font-face {
+    font-family: 'KyoboHandwriting2021sjy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    vertical-align: bottom;
+    border: none;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+/* 메뉴설정 */
+.nav{
+    z-index: 100;
+    position: fixed;
+    top: 29%;
+    right: 60px;
+    color: #fff;
+    font-size: 20px;
+    display: none;
+}
+.nav li{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 25px 0;
+    cursor: pointer;
+}
+.nav li i{
+    display: block;
+}
+.nav li p{
+    opacity: 0;
+}
+.nav li div{
+    opacity: 0;
+    position: absolute;
+    right: -70px;
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.nav>li:hover i{
+    display: none;
+}
+.nav>li:hover p{
+    opacity: 1;
+}
+.nav>li:hover div{
+    opacity: 1;
+}
+
+.nav li i.on{
+    display: none;
+}
+.nav li p.on01{
+    opacity: 1;
+}
+.nav li div.on02{
+    opacity: 1;
+}
+
+
+/* 메인설정 */
+.main{
+    position: relative;
+    background-image: url(../image/main_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1024px;
+}
+.main ul{
+    text-align: center;
+    position: absolute;
+    bottom: 60px;
+    right: 150px;
+    display: flex;
+    color: #fff;
+}
+.main ul li{
+    opacity: 0;
+    margin: 0 40px;
+    cursor: pointer;
+}
+.main ul li:nth-child(1){margin-right: 350px;}
+.main ul li:nth-child(2){margin-right: 45px;}
+.main ul li:nth-child(3){margin-right: 100px;}
+
+.main ul li:hover{
+
+}
+
+.main h2{
+    opacity: 0;
+    position: absolute;
+    bottom: 50px;
+    left: 150px;
+    font-size: 70px;
+    color: #fff;
+}
+.main img{
+    opacity: 0;
+    width: 100%;
+    animation: ani 3s linear;
+}
+
+@keyframes ani{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#line{
+    width: 0.7px;
+    height: 0;
+    background-color: #fff;
+    opacity: 0.7;
+    position: absolute;
+    top: 38%;
+}
+.line01{
+    left: 48%;
+}
+.line02{
+    left: 71%;
+}
+.line03{
+    left: 78%;
+}
+.line04{
+    left: 88%;
+}
+
+/* info 설정 */
+.info{
+    position: relative;
+    background-color: #111;
+    display: flex;
+    width: 100%;
+    height: 1024px;
+    color: #fff;
+}
+.info h1{
+    position: absolute;
+    text-align: right;
+    font-size: 120px;
+    top: 30%;
+    right: 200px;
+    letter-spacing: 10px;
+    line-height: 110px;
+}
+.info h2{
+    position: absolute;
+    right: 210px;
+    top: 55%;
+    font-size: 30px;
+}
+.info>p{
+    position: absolute;
+    right: 210px;
+    top: 62%;
+    line-height: 30px;
+}
+.info article{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    margin-top: -360px;
+    display: flex;
+    flex-direction: column;
+}
+.info article div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    background-color: #fff;
+}
+.info article div i{
+    font-size: 35px;
+    color: #111;
+}
+.info article div p{
+    position: absolute;
+    font-weight: bold;
+    left: 130%;
+    padding-bottom: 7px;
+
+    border-bottom: 5px solid #fff;
+}
+
+/* 액자 전체설정 */
+#design_box{
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    cursor: pointer;
+}
+#design_box img{
+    position: absolute;
+    z-index: 2;
+    width: 550px;
+    height: auto;
+}
+#design_box div{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+    background-color: #fff;
+    width: 360px;
+    height: 500px;
+}
+#pro{
+    position: relative;
+    background-image: url(../image/section_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#pro h2{
+    position: absolute;
+    font-family: 'KyoboHandwriting2021sjy';
+    color: #fff;
+    font-size: 50px;
+    top: 50px;
+    right: 330px;
+}
+#sign{
+    position: absolute;
+    color: #fff;
+    bottom: -120px;
+    left: 70px;
+    z-index: 10;
+    font-family: 'KyoboHandwriting2021sjy';
+    font-size: 22px;
+    opacity: 0.8;
+}
+
+/* pro01 설정 */
+.pro01{
+    display: flex;
+    width: 100%;
+    height: 1024px;
+}
+.pro01 article{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.pro01_design{
+    top: 15%;
+    left: 300px;
+}
+.pro01_site{
+    top: 15%;
+    left: 100px;
+}
+.pro01_site div{
+    background-image: url(../image/pro01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* pro02 설정 */
+.pro02{
+    display: flex;
+    width: 100%;
+    height: 1024px;
+}
+.pro02 article{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.pro02_design{
+    top: 15%;
+    left: 300px;
+    transition: all 1s;
+}
+.pro02_site{
+    top: 15%;
+    left: 100px;
+}
+.pro02_site div{
+    background-image: url(../image/pro02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.pro02_design:hover{
+    transform: rotate(1deg);
+}
+
+/* pro03 설정 */
+.pro03{
+    display: flex;
+    width: 100%;
+    height: 1024px;
+}
+.pro03 article{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.pro03_design{
+    top: 15%;
+    left: 300px;
+}
+.pro03_site{
+    top: 15%;
+    left: 100px;
+}
+.pro03_site div{
+    background-image: url(../image/다운로드.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+
+/* 팝업창 설정 */
+.popup{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+}
+.close{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.popup_txt{
+    position: relative;
+    z-index: 600;
+    width: 60%;
+    height: 800px;
+    background-color: #fff;
+    border: 3px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 100px;
+    display: none;
+}
+
+.popup_txt.on{
+    display: block;
+}
