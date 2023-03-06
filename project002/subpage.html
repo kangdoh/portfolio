@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>알라딘 중고서점</title>
+    <link rel="stylesheet" href="css/sub_style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/sub_js.js"></script>
+    <script src="https://use.fontawesome.com/29f84cf8f7.js"></script> 
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h2 class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></h2>
+        <ul class="nav">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <li>회사소개</li>
+            <li>국내도서</li>
+            <li>알라딘 굿즈</li>
+            <li>해외도서</li>
+            <li>eBook</li>
+            <li>전국매장</li>
+        </ul>
+        <div class="notice">
+            <p class="notice_list">
+                <strong>※공지사항</strong> 
+                <a>● 배송료 정책 일부 변경(2023.02.16부) </a>
+                <a>● 2월 신용카드 무이자 안내
+                <a>● [채용공고] 웹 개발자 </a>
+                <a>● [채용공고] 알라딘 NLP 서비스 개발자 </a>
+                <a>● [채용공고] 안드로이드 앱 개발자 </a>
+                <a>● '개인정보 처리방침' 일부 변경(2023년 1월 11일부)</a>
+            </p>
+        </div>
+        <div class="sns">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </div>
+        <div class="login">
+            <div class="login_box">
+                <div>로그인</div>
+                <div>/</div>
+                <div>회원가입</div>
+            </div>
+            <div class="shopping"><p>장바구니</p><i class="fa fa-shopping-cart" aria-hidden="true"> <span>0</span> </i></div>
+        </div>
+    </header>
+
+
+    <section class="bestseller">
+        <h2>국내도서 BestSeller</h2>
+        <article class="best_week">
+            <div class="btn" id="week_lbtn"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+            <div class="btn" id="week_rbtn"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+            <div class="week_title">
+                <div>주간베스트</div>
+                <input class="all01" type="button" value="전체선택">
+                <input class="shop01" type="button" value="장바구니담기">
+            </div>
+            <ul class="week_list">
+                <li>
+                    <div><input type="checkbox"><span>종합 1위</span></div>
+                    <p>
+                        <strong>세이노의 가르침</strong><br>
+                        세이노(지은이)<br>
+                        7,200￦ → 6,840￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(46) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 2위</span></div>
+                    <p>
+                        <strong>슬램덩크1</strong><br>
+                        이노우에 타케히코(지은이)<br>
+                        7,000￦ → 6,500￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(29) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 3위</span></div>
+                    <p>
+                        <strong>원씽 (리버버 특별판)</strong><br>
+                        개리 켈러, 제이파파산(지은이)<br>
+                        14,000￦ → 12,600￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(127) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 4위</span></div>
+                    <p>
+                        <strong>역행자</strong><br>
+                        자청(지은이)<br>
+                        17,000￦ → 15,750￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(144) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 5위</span></div>
+                    <p>
+                        <strong>김미경의 마흔수업</strong><br>
+                        김미경(지은이)<br>
+                        18,000￦ → 16,200￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(4) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 6위</span></div>
+                    <p>
+                        <strong>아버지의 해방일기</strong><br>
+                        정지아(지은이)<br>
+                        13,500￦ → 12,000￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(184) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 7위</span></div>
+                    <p>
+                        <strong>참을 수 없는 존재의 가벼움</strong><br>
+                        밀란 쿤더라(지은이)<br>
+                        15,000￦ → 13,500￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(71) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 8위</span></div>
+                    <p>
+                        <strong>정세현의 통찰</strong><br>
+                        정세현(지은이)<br>
+                        19,000￦ → 17,100￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(11) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 9위</span></div>
+                    <p>
+                        <strong>주식 시세의 비밀</strong><br>
+                        정재호(지은이)<br>
+                        22,000￦ → 19,800￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(3) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 10위</span></div>
+                    <p>
+                        <strong>슬램덩크2</strong><br>
+                        이노우에 타케히코(지은이)<br>
+                        6,500￦ → 5,850￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(7) 
+                    </p>
+                </li>
+            </ul>
+        </article>
+
+        <article class="best_time">
+            <div class="btn" id="time_lbtn"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+            <div class="btn" id="time_rbtn"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+            <div class="time_title">
+                <div>실시간베스트</div>
+                <input type="button" value="전체선택">
+                <input type="button" value="장바구니담기">
+            </div>
+            <ul class="time_list">
+                <li>
+                    <div><input type="checkbox"><span>실시간 1위</span></div>
+                    <p>
+                        <strong>세이노의 가르침</strong><br>
+                        세이노(지은이)<br>
+                        7,200￦ → 6,840￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(46) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>실시간 2위</span></div>
+                    <p>
+                        <strong>슬램덩크 리소스</strong><br>
+                        이노우에 타케히코(지은이)<br>
+                        20,000￦ → 18,000￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(18) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>실시간 3위</span></div>
+                    <p>
+                        <strong>김미경의 마흔수업</strong><br>
+                        김미경(지은이)<br>
+                        18,000￦ → 16,200￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(4) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>실시간 4위</span></div>
+                    <p>
+                        <strong>정세현의 통찰</strong><br>
+                        정세현(지은이)<br>
+                        19,000￦ → 17,100￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(11) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>실시간 5위</span></div>
+                    <p>
+                        <strong>슬램덩크 챔프</strong><br>
+                        이노우에 타케히코(지은이)<br>
+                        15,000￦ → 13,500￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(17) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>실시간 6위</span></div>
+                    <p>
+                        <strong>미스터 프레지던트</strong><br>
+                        탁현민(지은이)<br>
+                        22,000￦ → 19,800￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(48) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>실시간 7위</span></div>
+                    <p>
+                        <strong>나의 아름다운 날들</strong><br>
+                        정지아(지은이)<br>
+                        16,000￦ → 14,400￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(2) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>실시간 8위</span></div>
+                    <p>
+                        <strong>사진으로 보는 우리 문화유산</strong><br>
+                        강형원(지은이)<br>
+                        19,500￦ → 17,550￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(22) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>실시간 9위</span></div>
+                    <p>
+                        <strong>순간을 믿어요</strong><br>
+                        이석원(지은이)<br>
+                        16,500￦ → 14,850￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(6) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>실시간 10위</span></div>
+                    <p>
+                        <strong>K 배터리 레볼루션</strong><br>
+                        박순현(지은이)<br>
+                        19,000￦ → 17,100￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(5) 
+                    </p>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+
+
+    <section class="newbook">
+        <h2>국내도서 NEW</h2>
+        <article class="new_week">
+            <div class="btn" id="new_lbtn"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+            <div class="btn" id="new_rbtn"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+            
+            <div class="new_title">
+                <div>이번달 신간도서</div>
+                <input type="button" value="전체선택">
+                <input type="button" value="장바구니담기">
+            </div>
+            <ul class="new_list">
+                <li>
+                    <div><input type="checkbox"><span>종합 1위</span></div>
+                    <p>
+                        <strong>세이노의 가르침</strong><br>
+                        세이노(지은이)<br>
+                        7,200￦ → 6,840￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(46) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 2위</span></div>
+                    <p>
+                        <strong>슬램덩크1</strong><br>
+                        이노우에 타케히코(지은이)<br>
+                        7,000￦ → 6,500￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(29) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 3위</span></div>
+                    <p>
+                        <strong>원씽 (리버버 특별판)</strong><br>
+                        개리 켈러, 제이파파산(지은이)<br>
+                        14,000￦ → 12,600￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(127) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 4위</span></div>
+                    <p>
+                        <strong>역행자</strong><br>
+                        자청(지은이)<br>
+                        17,000￦ → 15,750￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(144) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 5위</span></div>
+                    <p>
+                        <strong>김미경의 마흔수업</strong><br>
+                        김미경(지은이)<br>
+                        18,000￦ → 16,200￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(4) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 6위</span></div>
+                    <p>
+                        <strong>아버지의 해방일기</strong><br>
+                        정지아(지은이)<br>
+                        13,500￦ → 12,000￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(184) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 7위</span></div>
+                    <p>
+                        <strong>참을 수 없는 존재의 가벼움</strong><br>
+                        밀란 쿤더라(지은이)<br>
+                        15,000￦ → 13,500￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(71) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 8위</span></div>
+                    <p>
+                        <strong>정세현의 통찰</strong><br>
+                        정세현(지은이)<br>
+                        19,000￦ → 17,100￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(11) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 9위</span></div>
+                    <p>
+                        <strong>주식 시세의 비밀</strong><br>
+                        정재호(지은이)<br>
+                        22,000￦ → 19,800￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(3) 
+                    </p>
+                </li>
+                <li>
+                    <div><input type="checkbox"><span>종합 10위</span></div>
+                    <p>
+                        <strong>슬램덩크2</strong><br>
+                        이노우에 타케히코(지은이)<br>
+                        6,500￦ → 5,850￦<span>(10%)</span><br>
+                        <br>
+                        ★★★★★(7) 
+                    </p>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+
+
+
+    <section></section>
+
+
+    
+
+</body>
+</html>
