@@ -94,7 +94,7 @@ body{
 .main ul{
     text-align: center;
     position: absolute;
-    bottom: 60px;
+    bottom: 50px;
     right: 150px;
     display: flex;
     color: #fff;
@@ -103,6 +103,8 @@ body{
     opacity: 0;
     margin: 0 40px;
     cursor: pointer;
+    font-family: 'KyoboHandwriting2021sjy';
+    font-size: 23px;
 }
 .main ul li:nth-child(1){margin-right: 350px;}
 .main ul li:nth-child(2){margin-right: 45px;}
@@ -112,18 +114,48 @@ body{
 
 }
 
-.main h2{
+.emo{
     opacity: 0;
     position: absolute;
-    bottom: 50px;
-    left: 150px;
-    font-size: 70px;
+    bottom: 0px;
+    left: 100px;
     color: #fff;
+    width: 500px;
+    height: 500px;
 }
+.emo p{
+    position: absolute;
+    bottom: 70px;
+    left: 320px;
+    font-size: 50px;
+    font-family: 'KyoboHandwriting2021sjy';
+}
+
 .main img{
     opacity: 0;
     width: 100%;
     animation: ani 3s linear;
+}
+.emo01{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 150px;
+    height: auto;
+}
+.emo02{
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    width: 80px;
+    height: auto;
+}
+.emo03{
+    position: absolute;
+    bottom: 15%;
+    left: 38%;
+    width: 80px;
+    height: auto;
 }
 
 @keyframes ani{
@@ -135,7 +167,7 @@ body{
     }
 }
 
-#line{
+.line{
     width: 0.7px;
     height: 0;
     background-color: #fff;
@@ -143,16 +175,16 @@ body{
     position: absolute;
     top: 38%;
 }
-.line01{
+#line01{
     left: 48%;
 }
-.line02{
+#line02{
     left: 71%;
 }
-.line03{
+#line03{
     left: 78%;
 }
-.line04{
+#line04{
     left: 88%;
 }
 
@@ -186,6 +218,9 @@ body{
     top: 62%;
     line-height: 30px;
 }
+.info article span{
+    color: #fff;
+}
 .info article{
     position: absolute;
     top: 50%;
@@ -213,24 +248,49 @@ body{
     font-weight: bold;
     left: 130%;
     padding-bottom: 7px;
-
+    display: flex;
+    
     border-bottom: 5px solid #fff;
 }
+.info article strong{
+    display: none;
+}
+
+
+.ps img{
+    width: 100%;
+    height: 100%;
+}
+.js img{
+    width: 70%;
+    height: 70%;
+}
+.ai img{
+    width: 100%;
+    height: 100%;
+}
+.figma img{
+    width: 100%;
+    height: 100%;
+}
+
 
 /* 액자 전체설정 */
-#design_box{
+.design_box{
     position: absolute;
     width: 400px;
     height: 550px;
     cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-#design_box img{
+.design_box img{
     position: absolute;
     z-index: 2;
     width: 550px;
     height: auto;
 }
-#design_box div{
+.design_box div{
     position: absolute;
     top: 100px;
     left: 100px;
@@ -239,14 +299,14 @@ body{
     width: 360px;
     height: 500px;
 }
-#pro{
+.pro{
     position: relative;
     background-image: url(../image/section_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#pro h2{
+.pro h2{
     position: absolute;
     font-family: 'KyoboHandwriting2021sjy';
     color: #fff;
@@ -254,7 +314,7 @@ body{
     top: 50px;
     right: 330px;
 }
-#sign{
+.sign{
     position: absolute;
     color: #fff;
     bottom: -120px;
@@ -266,26 +326,31 @@ body{
 }
 
 /* pro01 설정 */
-.pro01{
+#pro01{
     display: flex;
     width: 100%;
     height: 1024px;
 }
-.pro01 article{
+#pro01 article{
     position: relative;
     width: 50%;
     height: 100%;
 }
-
-.pro01_design{
+#pro01_design{
     top: 15%;
     left: 300px;
 }
-.pro01_site{
+#pro01_design div{
+    background-image: url(../image/design_view01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#pro01_site{
     top: 15%;
     left: 100px;
 }
-.pro01_site div{
+#pro01_site div{
     background-image: url(../image/pro01.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -293,59 +358,69 @@ body{
 }
 
 /* pro02 설정 */
-.pro02{
+#pro02{
     display: flex;
     width: 100%;
     height: 1024px;
 }
-.pro02 article{
+#pro02 article{
     position: relative;
     width: 50%;
     height: 100%;
 }
-
-.pro02_design{
+#pro02_design{
     top: 15%;
     left: 300px;
     transition: all 1s;
 }
-.pro02_site{
+#pro02_design div{
+    background-image: url(../image/design_view02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#pro02_site{
     top: 15%;
     left: 100px;
 }
-.pro02_site div{
+#pro02_site div{
     background-image: url(../image/pro02.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
 }
 
-
-.pro02_design:hover{
+#pro02_design:hover{
     transform: rotate(1deg);
 }
 
 /* pro03 설정 */
-.pro03{
+#pro03{
     display: flex;
     width: 100%;
     height: 1024px;
 }
-.pro03 article{
+#pro03 article{
     position: relative;
     width: 50%;
     height: 100%;
 }
 
-.pro03_design{
+#pro03_design{
     top: 15%;
     left: 300px;
 }
-.pro03_site{
+#pro03_design div{
+    background-image: url(../image/design_view03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pro03_site{
     top: 15%;
     left: 100px;
 }
-.pro03_site div{
+#pro03_site div{
     background-image: url(../image/다운로드.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -375,6 +450,7 @@ body{
     z-index: 100;
 }
 .popup_txt{
+    overflow-y: scroll;
     position: relative;
     z-index: 600;
     width: 60%;
@@ -386,7 +462,11 @@ body{
     margin-top: 100px;
     display: none;
 }
-
+.popup_txt img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
 .popup_txt.on{
     display: block;
 }
