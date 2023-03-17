@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <meta name="naver-site-verification" content="9599721a8ce763c73ce911c79c8b6a68304ca659" />
+    <title>강도현 portfolio</title>
 
     <link rel="stylesheet" href="css/style.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/js.js"></script>
     <script src="https://use.fontawesome.com/29f84cf8f7.js"></script> 
-
 </head>
+
 <body>
     <header>
         <ul class="nav">
@@ -25,7 +26,18 @@
 
     <section class="main">
         <img src="image/main_bg02.png" alt="">
-        <h2>강도현</h2>
+        <div class="emo">
+            <svg class="emo01" width="314" height="234" viewBox="0 0 314 234" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.06767 59.2345C2.70473 52.5086 125.752 17.0757 137.827 15.3148C142.808 14.5884 173.793 1.50415 177.584 6.55958C181.4 11.647 177.404 31.6294 176.867 35.4088C172.708 64.634 163.969 92.6534 155.911 120.952C147.71 149.755 138.405 180.907 135.674 210.944C135.271 215.377 133.171 227.452 140.984 228.311C162.865 230.718 193.338 216.428 213.897 211.088C243.93 203.286 276.84 190.994 308.339 190.994" stroke="white" stroke-width="10" stroke-linecap="round"/>
+            </svg>
+            <svg class="emo02" width="181" height="17" viewBox="0 0 181 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.42114 6.39515C62.2407 6.39515 119.562 3.87529 175.933 11.5622" stroke="white" stroke-width="10" stroke-linecap="round"/>
+            </svg>
+            <svg class="emo03" width="192" height="97" viewBox="0 0 192 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.75098 91.254C50.6983 91.254 104.369 72.6502 142.677 49.9178C159.951 39.6675 178.938 25.1444 186.597 5.99805" stroke="white" stroke-width="10" stroke-linecap="round"/>
+            </svg>
+            <p>강도현</p>
+        </div>
 
         <ul>
             <li>자기소개</li>
@@ -34,10 +46,10 @@
             <li>박명수<br>팬페이지</li>
         </ul>
 
-        <div class="line01" id="line"></div>
-        <div class="line02" id="line"></div>
-        <div class="line03" id="line"></div>
-        <div class="line04" id="line"></div>
+        <div id="line01" class="line"></div>
+        <div id="line02" class="line"></div>
+        <div id="line03" class="line"></div>
+        <div id="line04" class="line"></div>
     </section>
 
     <section class="info">
@@ -47,79 +59,87 @@
             이메일 : kdh7313@naver.com</p>
 
         <article>
-            <div class="html"><i class="fa fa-html5" aria-hidden="true"></i> <p>HTML</p></div>
-            <div class="css"><i class="fa fa-css3" aria-hidden="true"></i> <p>CSS</p></div>
-            <div class="js"><i class="fa-brands fa-square-js"></i> <p>JS</p></div>
-            <div class="ps"> <p>Photo<br>shop</p></div>
-            <div class="ai"> <p>Illustrator</p></div>
-            <div class="figma"><i class="fa-brands fa-figma"></i> <p>Figma</p></div>
+            <div class="html"><i class="fa fa-html5" aria-hidden="true"></i> <p>HTML <strong data-count="80">0</strong><b>%</b></p> </div>
+            <div class="css"><i class="fa fa-css3" aria-hidden="true"></i> <p>CSS <strong data-count="80">0</strong><b>%</b> </p></div>
+            <div class="js"><img src="image/java_1.png" alt=""><p>JS <strong data-count="50">0</strong><b>%</b> </p></div>
+            <div class="ps"><img src="image/ps_1.png" alt=""> <p>Photoshop <strong data-count="60">0</strong><b>%</b> </p></div>
+            <div class="ai"><img src="image/ill_1.png" alt=""> <p>Illustrator <strong data-count="50">0</strong><b>%</b> </p></div>
+            <div class="figma"><img src="image/figma_1.png" alt=""> <p>Figma <strong data-count="60">0</strong><b>%</b> </p></div>
         </article>
     </section>
 
-    <section class="pro01" id="pro">
+    <section id="pro01" class="pro">
         <h2>한라산 국립공원 리뉴얼</h2>
+
         <article>
-            <div  id="design_box" class="pro01_design">
+            <div  class="design_box" id="pro01_design">
                 <img src="image/frame.png" alt="">
                 <div></div>
-                <p id="sign">자세히보기</p>
+                <p class="sign">자세히보기</p>
             </div>
         </article>
         <article>
             <a href="http://portfoliodo.pe.kr/project001" target="_blank">
-                <div id="design_box" class="pro01_site">
+                <div class="design_box" id="pro01_site">
                     <img src="image/frame.png" alt="">
                     <div></div>
-                    <p id="sign">사이트이동</p>
+                    <p class="sign">사이트이동</p>
                 </div>
             </a>
         </article>
     </section>
 
-    <section class="pro02" id="pro">
+    <section id="pro02" class="pro">
         <h2>알라딘 중고서점 리뉴얼</h2>
         <article>
-            <div  id="design_box" class="pro02_design">
+            <div  class="design_box" id="pro02_design">
                 <img src="image/frame.png" alt="">
                 <div></div>
-                <p id="sign">자세히보기</p>
+                <p class="sign">자세히보기</p>
             </div>
         </article>
         <article>
             <a href="http://portfoliodo.pe.kr/project002" target="_blank">
-                <div id="design_box" class="pro02_site">
+                <div class="design_box" id="pro02_site">
                     <img src="image/frame.png" alt="">
                     <div></div>
-                    <p id="sign">사이트이동</p>
+                    <p class="sign">사이트이동</p>
                 </div>
             </a>
         </article>
     </section>
 
-    <section class="pro03" id="pro">
+
+    <section id="pro03" class="pro">
         <h2>박명수 팬페이지</h2>
         <article>
-            <div  id="design_box" class="pro03_design">
+            <div  class="design_box" id="pro03_design">
                 <img src="image/frame.png" alt="">
                 <div></div>
-                <p id="sign">자세히보기</p>
+                <p class="sign">자세히보기</p>
             </div>
         </article>
         <article>
             <a href="http://portfoliodo.pe.kr/project003" target="_blank">
-                <div id="design_box" class="pro03_site">
+                <div class="design_box" id="pro03_site">
                     <img src="image/frame.png" alt="">
                     <div></div>
-                    <p id="sign">사이트이동</p>
+                    <p class="sign">사이트이동</p>
                 </div>
             </a>
         </article>
     </section>
 
     <div class="popup">
-        <div class="popup_txt" id="pt01"></div>
-        <div class="popup_txt" id="pt02"></div>
-        <div class="popup_txt" id="pt03"></div>
+        <div class="popup_txt" id="pt01">
+            <img src="/image/design_view001.jpg" alt="">
+        </div>
+        <div class="popup_txt" id="pt02">
+            <img src="/image/design_view002.jpg" alt="">
+        </div>
+        <div class="popup_txt" id="pt03">
+            <img src="/image/design_view003.jpg" alt="">
+        </div>
 
         <div class="close"></div>
     </div>
